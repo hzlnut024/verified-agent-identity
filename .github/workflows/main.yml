@@ -14,8 +14,8 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install Skill via NPX (FIX)
-  run: npx clawhub@latest install verified-agent-identity --force
+      - name: Install Skill (NPX FIX)
+        run: npx clawhub@latest install verified-agent-identity --force
 
       - name: Install dependencies
         run: |
