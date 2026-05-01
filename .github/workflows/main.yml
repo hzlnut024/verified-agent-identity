@@ -24,9 +24,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-
       - name: Step 1 - Install ClawHub skill
-        run: npx clawhub@latest install verified-agent-identity
+        run: |
+    npm install -g clawhub
+    clawhub install verified-agent-identity
 
       - name: Install script dependencies
         run: |
