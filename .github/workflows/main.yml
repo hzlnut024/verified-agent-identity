@@ -27,6 +27,7 @@ jobs:
 
       - name: Step 1 - Install skill (force)
         run: clawhub install verified-agent-identity --force
+        
       - name: Install script dependencies
         run: |
           cd scripts
